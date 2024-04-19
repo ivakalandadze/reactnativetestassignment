@@ -5,7 +5,7 @@ import List from './routes/List'
 
 import { Home } from './routes/Home'
 
-export const AppContext = createContext(null)
+export const AppContext = createContext(null);
 
 const router = createBrowserRouter([
   {
@@ -19,9 +19,9 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-  const [state, setState] = useState(null)
+  const [mainArray, setMainArray] = useState(null)
   return (
-    <AppContext.Provider value={{ state, setState }}>
+    <AppContext.Provider value={{ mainArray, setMainArray }}>
       <RouterProvider router={router} />
     </AppContext.Provider>
   )
