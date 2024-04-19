@@ -63,7 +63,7 @@ console.log(maxPositiveDifference(example3));
 
 function maxPositiveDifference(arr) {
   let minSoFar = arr[0]; 
-  let maxDiff = 0; \
+  let maxDiff = 0; 
 
  
   for (let i = 1; i < arr.length; i++) {
